@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Bibliothèque</title>
+</h:head>
+<h:body>
+	<h1>Bibliothèque</h1>
+
+	<h4>Service d'ajout de livres</h4>
+	<p>Vous souhaitez ajouter un livre à notre base de données. Voici les informations demandées.</p>
+
+	<div class="formulaire">
+		<h4>Ajout d'un livre</h4>
+		<h:form>
+			<label>Titre : </label>
+			<h:inputText value="#{Livre.titre}" type="text" placeholder="Saisir le titre"></h:inputText>
+			<br></br>
+
+			<label>Auteur : </label>
+			<h:inputText value="#{Livre.auteur}" type="text" placeholder="Saisir l'auteur"></h:inputText>
+			<br></br>
+
+			<label>Date : </label>
+			<h:inputText value="#{Livre.date}" type="text" placeholder="Saisir la date de publication" ></h:inputText>
+			<br></br>
+			
+			<label>Prix : </label>
+			<h:inputText value="#{Livre.prix}" type="text" placeholder="Saisir le prix d'achat"></h:inputText>
+			<br></br>
+			<h:commandButton action="#{Livre.addLivre}" value="Ajouter un livre" />
+			
+			<h:commandButton action="index.xhtml" value="Revenir à la page d'accueil"></h:commandButton>
+		</h:form>
+	</div>
+
+
+</h:body>
+</html>

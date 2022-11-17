@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Bibliothèque</title>
+</h:head>
+<h:body>
+	<h1>Bibliothèque</h1>
+
+	<h4>Bienvenue sur le site de gestion de notre bibliothèque.</h4>
+	<p>
+		Comme vous pouvez le voir, à partir de cette page, vous aurez accès à
+		<strong>plusieurs services</strong> afin de faciliter la gestion de
+		nos livres.
+	</p>
+
+	<div class="ajout">
+		<h4>Ajout d'un livre</h4>
+		<h:form>
+			<h:commandButton action="AjoutLivre.xhtml" value="Ajouter un livre"></h:commandButton>
+		</h:form>
+	</div>
+
+	<div class="modifier">
+		<h4>Modifier un livre</h4>
+		<h:form>
+			<h:commandButton action="#" value="Modifier un livre"></h:commandButton>
+		</h:form>
+	</div>
+
+	<div class ="supprimer">
+		<h4>Suppimer un livre</h4>
+		<h:form>
+			<h:commandButton action="#" value="Supprimer un livre"></h:commandButton>
+		</h:form>
+	</div>
+
+</h:body>
+</html>
